@@ -27,6 +27,7 @@ cargo run
 In a new terminal (in the same `/backend` directory), execute the following curl commands. WARNING: you will not get the same output, since you will receive different did's. Also, in some of the request's I have used json files for the request's body. I might add a script for better demonstration later.
 
 Create first account for Baruch.
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -41,6 +42,7 @@ RESPONSE:
 ```
 
 Create second account for 17th Century (using same stronghold path and password for simplicity).
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -56,6 +58,7 @@ RESPONSE:
 
 
 To check if account creation worked: commit a read for Baruch
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -92,6 +95,7 @@ RESPONSE:
 ```
 
 Update second account for 17th Century which adds a method to its account.
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -137,6 +141,7 @@ RESPONSE:
 ```
 
 Add the same method to Baruch's account.
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -182,6 +187,7 @@ RESPONSE:
 ```
 
 Let the 17th Century account (issuer) create a new Credential for Baruch (holder)
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -220,6 +226,7 @@ RESPONSE:
 ```
 
 Let Baruch sign the new Credential and obtain a Presentation
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -268,6 +275,7 @@ RESPONSE:
 ```
 
 Verify the Presentation
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -284,6 +292,7 @@ RESPONSE:
 ```
 
 Delete Baruch's account:
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
@@ -299,6 +308,7 @@ RESPONSE:
 ```
 
 Delete 17th Century's account:
+
 REQUEST:
 ```
 curl -H 'Content-Type: application/json' \
