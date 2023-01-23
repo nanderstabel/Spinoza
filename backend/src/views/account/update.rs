@@ -23,6 +23,7 @@ pub async fn update(Storage(stronghold): Storage, Did(did): Did) -> impl IntoRes
     };
 
     // Add verification method to the issuer. In this case always the same method is used.
+
     account
         .update_identity()
         .create_method()
