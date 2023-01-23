@@ -1,3 +1,6 @@
+use frontend::Spinoza;
+use yew::prelude::*;
+
 fn main() {
-    println!("To do!");
+    yew::Renderer::<Spinoza>::new().render();
 }
